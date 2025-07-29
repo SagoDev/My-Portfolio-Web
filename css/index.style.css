@@ -198,6 +198,14 @@ main {
                 padding-top: 4rem;
                 position: relative;
 
+                .subtitle {
+                    margin-bottom: 2rem;
+                    text-align: center;
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    color: var(--blue-color);
+                }
+
                 .title {
                     text-align: center;
                     font-size: 3.6rem;
@@ -253,8 +261,8 @@ main {
                                     span {
                                         position: absolute;
                                         top: -20%;
-                                        background-color: var(--grey-color);
-                                        color: var(--blue-color);
+                                        background-color: var(--contrast-color);
+                                        color: var(--grey-color);
                                         font-size: 1.6rem;
                                         padding: .5rem 1rem;
                                         border-radius: .6rem;
