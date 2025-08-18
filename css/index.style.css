@@ -394,9 +394,9 @@ main {
                                     margin: -5px 0 10px;
                                 }
 
-                                &.error {
+                                .error {
                                     .item {
-                                        border-color: #d93025;
+                                        border: 0.2rem solid #d93025;
                                     }
 
                                     .error-text {
