@@ -10,6 +10,34 @@
 </head>
 
 <body>
+    <nav id="desktop-nav">
+        <div class="logo">Santiago Lanz</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Projectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Santiago Lanz</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre mi</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+                <li><a href="projects" onclick="toggleMenu()">Projectos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+            </div>
+        </div>
+    </nav>
+    <script src="./script.js"></script>
 </body>
 
 </html>
