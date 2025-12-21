@@ -7,3 +7,39 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .skills-details-container {
+        .about-containers {
+            grid-template-columns: repeat(1, 1fr);
+
+            .details-container {
+                width: 100vw;
+                overflow: hidden;
+
+                .article-container {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    overflow: scroll;
+                    width: 100vw;
+                    padding: 1rem;
+
+                    article {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        border-radius: .8rem;
+                        padding: 1rem;
+                        font-size: 1.2rem;
+                        background-color: var(--grey-color);
+                        color: var(--blue-color);
+                        flex: 1 0 auto;
+                        margin: 0 1rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
