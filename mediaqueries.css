@@ -32,8 +32,6 @@
                         border-radius: .8rem;
                         padding: 1rem;
                         font-size: 1.2rem;
-                        background-color: var(--grey-color);
-                        color: var(--blue-color);
                         flex: 1 0 auto;
                         margin: 0 1rem;
                     }
