@@ -67,11 +67,11 @@ a:hover {
 
 /*HAMBURGER MENU*/
 
-#hamburger-nav {
+#mobile-nav {
     display: none;
 }
 
-.hamburger-menu {
+.mobile-menu {
     position: relative;
     display: inline-block;
 }
@@ -111,7 +111,7 @@ a:hover {
 
 
 
-.hamburger-icon i {
+.mobile-icon i {
     font-size: 36px;
     cursor: pointer;
 }
@@ -430,4 +430,15 @@ article {
 
 .contact-info-container i {
     font-size: 2rem;
+}
+
+/*FOOTER SECTION*/
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
 }
