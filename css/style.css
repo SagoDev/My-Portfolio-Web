@@ -18,6 +18,59 @@
 }
 
 /* =========================
+   DARK MODE VARIABLES
+========================= */
+
+[data-theme="dark"] {
+    --color-black: #ffffff;
+    --color-white: #121212;
+
+    --color-grey-900: #e0e0e0;
+    --color-grey-800: #bdbdbd;
+    --color-grey-700: #9e9e9e;
+    --color-grey-500: #757575;
+    --color-grey-300: #424242;
+    --color-grey-100: #1e1e1e;
+
+    .btn-color-2 {
+        color: #ffffff;
+    }
+}
+
+/* =========================
+   DARK MODE BUTTON
+========================= */
+.theme-btn {
+    background: var(--color-grey-100);
+    color: var(--color-black);
+    border: var(--color-grey-300) 0.1rem solid;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+.theme-btn:hover {
+    background: var(--color-grey-300);
+}
+
+.theme-btn i {
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: transform 400ms ease, opacity 200ms ease;
+}
+
+.theme-btn.rotate i {
+    transform: rotate(180deg);
+    opacity: .8;
+}
+
+/* =========================
    GENERAL
 ========================= */
 * {
@@ -27,6 +80,9 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: background-color 300ms ease, color 300ms ease;
 }
 
 html {
