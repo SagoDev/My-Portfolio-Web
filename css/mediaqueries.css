@@ -1,0 +1,170 @@
+@media screen and (max-width:1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: wrap;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+    }
+
+    #skills,
+    .skills-details-container {
+        margin-top: 2rem;
+    }
+
+    #profile,
+    .section-container {
+        display: block;
+    }
+
+    section,
+    .section-container {
+        height: fit-content;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .profile__pic-container,
+    .about__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-details-container {
+        .about-containers {
+            grid-template-columns: repeat(1, 1fr);
+
+            .details-container {
+                overflow: hidden;
+
+                .article-container {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    overflow: scroll;
+                    width: 100vw;
+                    padding: 1rem;
+
+                    article {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        border-radius: .8rem;
+                        padding: 1rem;
+                        font-size: 1.2rem;
+                        flex: 1 0 auto;
+                        margin: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    #contact,
+    footer {
+        height: 40vh;
+    }
+
+    #profile {
+        height: 100vh;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+
+    .contact-info-container {
+        margin: 0;
+    }
+
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .skills-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: .5rem;
+        text-align: center;
+    }
+
+    .profile__pic-container,
+    .about__pic-container {
+        width: auto;
+        height: 35vh;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text-container {
+        text-align: justify;
+    }
+}
+
+
+/* =========================
+   DARK MODE BUTTON - MOBILE
+========================= */
+
+@media (max-width: 1100px) {
+    .theme-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        z-index: 999;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+}

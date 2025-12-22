@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* =========================
+   CSS VARIABLES
+========================= */
+
+:root {
+    /* Base colors */
+    --color-black: #000000;
+    --color-white: #ffffff;
+
+    /* Greys */
+    --color-grey-900: rgb(53, 53, 53);
+    --color-grey-800: rgb(65, 65, 65);
+    --color-grey-700: rgb(85, 85, 85);
+    --color-grey-500: grey;
+    --color-grey-300: rgb(163, 163, 163);
+    --color-grey-100: rgb(250, 250, 250);
+}
+
+/* =========================
+   DARK MODE VARIABLES
+========================= */
+
+[data-theme="dark"] {
+    --color-black: #ffffff;
+    --color-white: #121212;
+
+    --color-grey-900: #e0e0e0;
+    --color-grey-800: #bdbdbd;
+    --color-grey-700: #9e9e9e;
+    --color-grey-500: #757575;
+    --color-grey-300: #424242;
+    --color-grey-100: #1e1e1e;
+
+    .btn-color-2 {
+        color: #ffffff;
+    }
+}
+
+/* =========================
+   DARK MODE BUTTON
+========================= */
+.theme-btn {
+    background: var(--color-grey-100);
+    color: var(--color-black);
+    border: var(--color-grey-300) 0.1rem solid;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+.theme-btn:hover {
+    background: var(--color-grey-300);
+}
+
+.theme-btn i {
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: transform 400ms ease, opacity 200ms ease;
+}
+
+.theme-btn.rotate i {
+    transform: rotate(180deg);
+    opacity: .8;
+}
+
+/* =========================
+   GENERAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: background-color 300ms ease, color 300ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: var(--color-grey-700);
+}
+
+/* =========================
+   TRANSITION
+========================= */
+
+.btn {
+    transition: all 300ms ease;
+}
+
+/* =========================
+   DESKTOP NAV
+========================= */
+
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;
+    text-decoration-color: var(--color-white);
+}
+
+a:hover {
+    color: var(--color-grey-500);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* =========================
+   HAMBURGER MENU
+========================= */
+
+#mobile-nav {
+    display: none;
+}
+
+.mobile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-white);
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-black);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    min-height: 300px;
+}
+
+.mobile-icon i {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* =========================
+   PROFILE SECTION
+========================= */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.profile__pic-container {
+    display: flex;
+    height: 260px;
+    width: 260px;
+    margin: auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#socials-container a i {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: var(--color-grey-900) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: var(--color-grey-900);
+    color: var(--color-white);
+}
+
+.btn-color-1:hover {
+    background: var(--color-black);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: var(--color-white) 0.1rem solid;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 10%;
+}
+
+.arrow {
+    font-size: 3.5rem;
+    position: absolute;
+    right: -5rem;
+    bottom: 2rem;
+    cursor: pointer;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: var(--color-white);
+    border-radius: 2rem;
+    border: var(--color-grey-300) 0.1rem solid;
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.about__pic-container {
+    display: flex;
+    height: 350px;
+    width: 350px;
+    margin: auto 0;
+}
+
+.about-details-container .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: justify;
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+#skills {
+    position: relative;
+}
+
+.skill-subtitle {
+    color: var(--color-grey-800);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.skills-details-container,
+.projects-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.skills-details-container .about-containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+#projects {
+    position: relative;
+}
+
+.projects-group-title {
+    margin: 2.5rem 0 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.color-container {
+    border-color: var(--color-grey-300);
+    background: var(--color-grey-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.color-container .article-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-details-container .about-containers {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    gap: 1.5rem;
+    scroll-behavior: smooth;
+}
+
+.project-text-container p {
+    font-size: 0.8rem;
+}
+
+.project-img {
+    width: 90%;
+    height: 90%;
+    border-radius: 2rem;
+}
+
+.project-title {
+    margin: 1rem;
+    color: var(--color-black);
+}
+
+.project-btn {
+    color: var(--color-black);
+    border-color: var(--color-grey-300);
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: var(--color-grey-300) 0.1rem solid;
+    background: var(--color-white);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+    font-size: larger;
+}
+
+.contact-info-container i {
+    font-size: 2rem;
+}
+
+/* =========================
+   FOOTER SECTION
+========================= */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
