@@ -1,10 +1,32 @@
-/*ACTIVE MOBILE NAV */
+/* =====================================================
+   MOBILE NAV – Floating Button
+===================================================== */
+
 function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
+    const menu = document.getElementById("mobile-menu");
     menu.classList.toggle("open");
 }
 
-/*ACTIVE DARK MODE*/
+/* Close mobile menu when clicking outside */
+document.addEventListener("click", (event) => {
+    const menu = document.getElementById("mobile-menu");
+    const fab = document.querySelector(".mobile-fab");
+
+    if (
+        menu &&
+        fab &&
+        menu.classList.contains("open") &&
+        !menu.contains(event.target) &&
+        !fab.contains(event.target)
+    ) {
+        menu.classList.remove("open");
+    }
+});
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
 const toggleBtn = document.getElementById("theme-toggle");
 const themeIcon = document.getElementById("theme-icon");
 const rootElement = document.documentElement;
@@ -15,7 +37,7 @@ const mobileIcon = mobileThemeBtn
     : null;
 
 /* =========================
-THEME ICON UPDATE
+   THEME ICON UPDATE
 ========================= */
 
 function updateThemeIcon(theme) {
@@ -31,7 +53,7 @@ function updateThemeIcon(theme) {
 }
 
 /* =========================
-INITIAL LOAD
+   INITIAL LOAD
 ========================= */
 
 const savedTheme = localStorage.getItem("theme");
@@ -42,7 +64,7 @@ if (savedTheme) {
 }
 
 /* =========================
-TOGGLE ACTION
+   TOGGLE ACTION (Desktop)
 ========================= */
 
 toggleBtn.addEventListener("click", () => {
@@ -62,7 +84,7 @@ toggleBtn.addEventListener("click", () => {
 });
 
 /* =========================
-MOBILE DELEGATION
+   MOBILE DELEGATION
 ========================= */
 
 if (mobileThemeBtn) {
@@ -70,4 +92,3 @@ if (mobileThemeBtn) {
         toggleBtn.click();
     });
 }
-

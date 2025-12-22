@@ -35,28 +35,30 @@
 
     </nav>
     <nav id="mobile-nav">
-        <div class="logo">Santiago Lanz</div>
-        <div class="mobile-menu">
-            <div class="mobile-icon">
-                <i class="bi bi-list" onclick="toggleMenu()"></i>
-            </div>
-            <div class="menu-links">
+        <!-- Floating Action Button -->
+        <button class="mobile-fab" aria-label="Open menu" onclick="toggleMenu()">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Floating Menu -->
+        <div class="menu-links" id="mobile-menu">
+            <ul class="mobile-menu-list">
                 <li><a href="#about" onclick="toggleMenu()">Sobre mi</a></li>
                 <li><a href="#skills" onclick="toggleMenu()">Habilidades</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projectos</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
-                <li>
+                <li class="mobile-theme-toggle">
                     <button class="theme-btn theme-btn-mobile" aria-label="Toggle dark mode">
                         <i class="bi bi-moon-fill"></i>
                     </button>
                 </li>
-
-            </div>
+            </ul>
         </div>
     </nav>
+
     <section id="profile">
         <div class="profile__pic-container">
-            <img src="https://github.com/SagoDev.png" alt="Profile picture">
+            <img src="https://github.com/SagoDev.png" class="profile-pic" alt="Profile picture">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hola, soy</p>

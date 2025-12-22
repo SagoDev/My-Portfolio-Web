@@ -5,7 +5,7 @@
     }
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:768px) {
     #desktop-nav {
         display: none;
     }
@@ -22,6 +22,7 @@
     #profile,
     .section-container {
         display: block;
+        align-content: center;
     }
 
     section,
@@ -47,9 +48,7 @@
     .about-containers {
         margin-top: 0;
     }
-}
 
-@media screen and (max-width: 768px) {
     .skills-details-container {
         .about-containers {
             grid-template-columns: repeat(1, 1fr);
@@ -59,16 +58,16 @@
 
                 .article-container {
                     display: flex;
-                    align-items: center;
                     flex-wrap: nowrap;
-                    overflow: scroll;
-                    width: 100vw;
-                    padding: 1rem;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    width: 100%;
+                    gap: 1.5rem;
+                    scroll-behavior: smooth;
 
                     article {
                         display: flex;
                         flex-direction: row;
-                        align-items: center;
                         border-radius: .8rem;
                         padding: 1rem;
                         font-size: 1.2rem;
@@ -79,9 +78,10 @@
             }
         }
     }
-}
 
-@media screen and (max-width:600px) {
+    .nav-links-container {
+        display: none;
+    }
 
     #contact,
     footer {
@@ -94,11 +94,6 @@
 
     article {
         font-size: 1rem;
-    }
-
-    footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
     }
 
     .about-containers,
@@ -162,9 +157,108 @@
         height: 36px;
         font-size: 1rem;
         position: fixed;
-        bottom: 1.5rem;
+        top: 1.5rem;
         right: 1.5rem;
         z-index: 999;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+}
+
+/* =========================
+   MOBILE FLOATING NAV
+========================= */
+
+@media (max-width: 768px) {
+    #mobile-nav {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1000;
+    }
+
+    /* Floating button */
+    .mobile-fab {
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
+
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+
+        background: var(--color-grey-900);
+        color: var(--color-white);
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 1.6rem;
+        cursor: pointer;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+        pointer-events: auto;
+
+        transition: transform 300ms ease, background-color 300ms ease;
+    }
+
+    .mobile-fab:hover {
+        transform: scale(1.05);
+    }
+
+    /* Menu container */
+    .menu-links {
+        position: fixed;
+        bottom: 5.5rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(120%);
+
+        width: calc(100% - 3rem);
+        max-width: 420px;
+
+        background: var(--color-grey-100);
+        border-radius: 1.5rem;
+        padding: 1.5rem 1rem;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+        opacity: 0;
+        pointer-events: none;
+
+        transition: transform 400ms ease, opacity 300ms ease;
+    }
+
+    .menu-links.open {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .mobile-menu-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        text-align: center;
+    }
+
+    .mobile-menu-list a {
+        font-size: 1.2rem;
+        color: var(--color-black);
+        text-decoration: none;
+        padding: 0.5rem;
+        border-radius: 0.75rem;
+        transition: background-color 200ms ease;
+    }
+
+    .mobile-menu-list a:hover {
+        background: var(--color-grey-300);
+    }
+
+    .mobile-theme-toggle {
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: center;
     }
 }

@@ -143,51 +143,14 @@ a:hover {
 }
 
 /* =========================
-   HAMBURGER MENU
+   MOBILE MENU
 ========================= */
 
 #mobile-nav {
     display: none;
 }
 
-.mobile-menu {
-    position: relative;
-    display: inline-block;
-}
 
-.menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: var(--color-white);
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-.menu-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--color-black);
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.menu-links li {
-    list-style: none;
-}
-
-.menu-links.open {
-    min-height: 300px;
-}
-
-.mobile-icon i {
-    font-size: 36px;
-    cursor: pointer;
-}
 
 /* =========================
    SECTIONS
@@ -223,6 +186,10 @@ section {
     margin: auto 0;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.profile-pic {
+    border-radius: 50%;
 }
 
 .section__text {
@@ -475,7 +442,7 @@ article {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 90vh;
 }
 
 .contact-info-upper-container {
@@ -506,8 +473,9 @@ article {
 ========================= */
 
 footer {
-    height: 26vh;
+    height: 10vh;
     margin: 0 1rem;
+    align-content: end;
 }
 
 footer p {
