@@ -251,161 +251,168 @@
     </section>
     <section id="projects">
         <p class="section__text__p1">Explora mis recientes</p>
-        <h1 class="title">Projectos</h1>
-
-        <!-- PROYECTOS WEB -->
-        <h2 class="projects-group-title">Desarrollo Web</h2>
-        <div class="projects-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project_fragua.png" alt="fragua_project" class="project-img">
-                    </div>
-                    <h3 class="project-subtitle project-title">Fragua</h3>
-                    <h5>Librería</h5>
-                    <div class="project-text-container">
-                        <p>Python</p>
-                        <p>Activo</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/SagoDev/Fragua'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://pypi.org/project/fragua/'">PyPI</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="" alt="melterETL_project" class="project-img">
-                    </div>
-                    <h3 class="project-subtitle project-title">Melter ETL</h3>
-                    <h5>Web</h5>
-                    <div class="project-text-container">
-                        <p>HTML, CSS, Angular, Python</p>
-                        <p>Activo</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/SagoDev/Melter-ETL'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Ver web</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project_e-commerce.webp" alt="ecommerce_project" class="project-img">
-                    </div>
-                    <h3 class="project-subtitle project-title">E-Commerce</h3>
-                    <h5>Web</h5>
-                    <div class="project-text-container">
-                        <p>HTML, CSS, Javascript</p>
-                        <p>Finalizado</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/SagoDev/Proyecto-Final-Grupal'">Github</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://sagodev.github.io/Proyecto-Final-Grupal/login.html'">Ver
-                            web</button>
-                    </div>
-                </div>
-            </div>
+        <h1 class="title">Proyectos</h1>
+        <div class="projects-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="dashboard">Dashboards</button>
         </div>
 
-        <!-- DASHBOARDS -->
-        <h2 class="projects-group-title">Dashboards</h2>
-        <div class="projects-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/dashboard_donors.png" alt="ong_dashboard" class="project-img">
+        <div class="projects-grid">
+
+            <!-- Web -->
+            <article class="project-card" data-category="web python">
+                <img src="./assets/" alt="Melter ETL project">
+                <div class="project-content">
+                    <h3>Melter ETL</h3>
+                    <p class="project-impact">
+                        Plataforma web para orquestación y visualización de procesos ETL.
+                    </p>
+                    <div class="project-tags">
+                        <span>Angular</span>
+                        <span>HTML/CSS</span>
+                        <span>Python</span>
+                        <span>Activo</span>
                     </div>
-                    <h3 class="project-subtitle project-title">
-                        Donaciones y Pagos
-                    </h3>
-                    <h5>Dashboard</h5>
-                    <div class="project-text-container">
-                        <p>Looker Studio</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://shorturl.at/yNtBq'">Dashboard</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://shorturl.at/ysfnh'">Datos</button>
+                    <div class="project-actions">
+                        <a href="https://github.com/SagoDev/Melter-ETL" target="_blank">GitHub</a>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/dashboard_historical.png" alt="historical_dashboard" class="project-img">
+            </article>
+            <article class="project-card" data-category="python web">
+                <img src="./assets/project_fragua.png" alt="Fragua project">
+                <div class="project-content">
+                    <h3>Fragua</h3>
+                    <p class="project-impact">
+                        Framework modular para construir pipelines ETL y flujos de procesamiento de datos.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>ETL</span>
+                        <span>Activo</span>
                     </div>
-                    <h3 class="project-subtitle project-title">
-                        Histórico de Tickets
-                    </h3>
-                    <h5>Dashboard</h5>
-                    <div class="project-text-container">
-                        <p>Power BI</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://shorturl.at/VWsTJ'">Descargar</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://shorturl.at/33BXM'">Datos</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/dashboard_payments.png" alt="payments_dashboard" class="project-img">
-                    </div>
-                    <h3 class="project-subtitle project-title">
-                        Pagos y Donaciones
-                    </h3>
-                    <h5>Dashboard</h5>
-                    <div class="project-text-container">
-                        <p>Power BI</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://shorturl.at/LgvXi'">Descargar</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://shorturl.at/3FMN1'">Datos</button>
+                    <div class="project-actions">
+                        <a href="https://github.com/SagoDev/Fragua" target="_blank">GitHub</a>
+                        <a href="https://pypi.org/project/fragua/" target="_blank">PyPI</a>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/dashboard_sales.png " alt=sales_dashboard" class="project-img">
+            </article>
+
+
+            <article class="project-card" data-category="dashboard">
+                <div class="project-image-wrapper">
+                    <img src="./assets/dashboard_donors.png" alt="Donors dashboard">
+                </div>
+                <div class="project-content">
+                    <h3>Donaciones y Pagos</h3>
+                    <p class="project-impact">
+                        Dashboard con KPIs de donaciones y pagos para una ONG.
+                    </p>
+                    <div class="project-tags">
+                        <span>Looker Studio</span>
+                        <span>Dashboard</span>
                     </div>
-                    <h3 class="project-subtitle project-title">
-                        Ventas
-                    </h3>
-                    <h5>Dashboard</h5>
-                    <div class="project-text-container">
-                        <p>Power BI</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://shorturl.at/LGT1f'">Descargar</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://shorturl.at/B2aFx'">Datos</button>
+                    <div class="project-actions">
+                        <a href="https://shorturl.at/yNtBq" target="_blank">Ver</a>
+                        <a href="https://shorturl.at/ysfnh" target="_blank">Datos</a>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/dashboard_utility_report.png " alt=utility_dashboard" class="project-img">
+            </article>
+            <article class="project-card" data-category="dashboard">
+                <div class="project-image-wrapper">
+                    <img src="./assets/dashboard_sales.png" alt="Sales dashboard">
+                </div>
+                <div class="project-content">
+                    <h3>Ventas</h3>
+                    <p class="project-impact">
+                        Dashboard financiero con KPIs de ventas y análisis temporal.
+                    </p>
+                    <div class="project-tags">
+                        <span>Power BI</span>
+                        <span>Dashboard</span>
                     </div>
-                    <h3 class="project-subtitle project-title">
-                        Utilidad y Margen
-                    </h3>
-                    <h5>Dashboard</h5>
-                    <div class="project-text-container">
-                        <p>Power BI</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://shorturl.at/hNMYh'">Descargar</button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://shorturl.at/jHlE0'">Datos</button>
+                    <div class="project-actions">
+                        <a href="https://shorturl.at/LGT1f" target="_blank">Descargar</a>
+                        <a href="https://shorturl.at/B2aFx" target="_blank">Datos</a>
                     </div>
                 </div>
-            </div>
+            </article>
+            <article class="project-card" data-category="dashboard">
+                <div class="project-image-wrapper">
+                    <img src="./assets/dashboard_historical.png" alt="Historical dashboard">
+                </div>
+                <div class="project-content">
+                    <h3>Histórico de Tickets</h3>
+                    <p class="project-impact">
+                        Dashboard con informe de histórico de tickets.
+                    </p>
+                    <div class="project-tags">
+                        <span>Power BI</span>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://shorturl.at/VWsTJ" target="_blank">Descargar</a>
+                        <a href="https://shorturl.at/33BXM" target="_blank">Datos</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card" data-category="dashboard">
+                <div class="project-image-wrapper">
+                    <img src="./assets/dashboard_utility_report.png" alt="Utility dashboard">
+                </div>
+                <div class="project-content">
+                    <h3>Ingresos, Utilidad y Margen</h3>
+                    <p class="project-impact">
+                        Dashboard con KPIs de ingresos, utilidad y margen.
+                    </p>
+                    <div class="project-tags">
+                        <span>Power BI</span>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://shorturl.at/hNMYh" target="_blank">Descargar</a>
+                        <a href="https://shorturl.at/jHlE0" target="_blank">Datos</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card" data-category="dashboard">
+                <div class="project-image-wrapper">
+                    <img src="./assets/dashboard_payments.png" alt="Payments dashboard">
+                </div>
+                <div class="project-content">
+                    <h3>Pagos y Donaciones</h3>
+                    <p class="project-impact">
+                        Dashboard con KPIs de pagos y donaciones.
+                    </p>
+                    <div class="project-tags">
+                        <span>Power BI</span>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://shorturl.at/LgvXi" target="_blank">Descargar</a>
+                        <a href="https://shorturl.at/3FMN1" target="_blank">Datos</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="web">
+                <img src="./assets/project_e-commerce.webp" alt="E-commerce project">
+                <div class="project-content">
+                    <h3>E-Commerce</h3>
+                    <p class="project-impact">
+                        Aplicación web de comercio electrónico con flujo completo de usuario.
+                    </p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                        <span>Finalizado</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/SagoDev/Proyecto-Final-Grupal" target="_blank">GitHub</a>
+                        <a href="https://sagodev.github.io/Proyecto-Final-Grupal/login.html" target="_blank">Ver web</a>
+                    </div>
+                </div>
+            </article>
         </div>
         <i class="bi bi-arrow-down-square-fill arrow" onclick="location.href='./#contact'"></i>
     </section>
