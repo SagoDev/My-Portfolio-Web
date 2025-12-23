@@ -17,6 +17,30 @@
     --color-grey-100: rgb(250, 250, 250);
 }
 
+
+/* =========================
+   GENERAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: background-color 300ms ease, color 300ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: var(--color-grey-700);
+}
+
 /* =========================
    DARK MODE VARIABLES
 ========================= */
@@ -70,28 +94,6 @@
     opacity: .8;
 }
 
-/* =========================
-   GENERAL
-========================= */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: var(--color-white);
-    color: var(--color-black);
-    transition: background-color 300ms ease, color 300ms ease;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-p {
-    color: var(--color-grey-700);
-}
 
 /* =========================
    TRANSITION
@@ -379,60 +381,118 @@ article {
    PROJECTS SECTION
 ========================= */
 
+/* ===== PROYECTS SECTION ===== */
+
 #projects {
     position: relative;
 }
 
-.projects-group-title {
-    margin: 2.5rem 0 1rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-align: left;
+.projects-filters {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
 }
 
-.color-container {
-    border-color: var(--color-grey-300);
-    background: var(--color-grey-100);
+.filter-btn {
+    border: 1px solid var(--color-grey-300);
+    background: transparent;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: var(--color-black);
+    transition: all 0.2s ease;
+}
+
+.filter-btn.active {
+    background: var(--color-grey-300);
+    color: var(--color-black);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    border: 1px solid var(--color-grey-300);
+    border-radius: 1.5rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.color-container .article-container {
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.project-content {
+    padding: 1.2rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 0.8rem;
 }
 
-.projects-details-container .about-containers {
+.project-content h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--color-black);
+    border-top: 1px solid var(--color-grey-300);
+}
+
+
+.project-impact {
+    font-size: 0.9rem;
+    color: var(--color-grey-600);
+    line-height: 1.4;
+}
+
+.project-tags {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    width: 100%;
-    gap: 1.5rem;
-    scroll-behavior: smooth;
+    flex-wrap: wrap;
+    gap: 0.4rem;
 }
 
-.project-text-container p {
+.project-tags span {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    background: var(--color-grey-200);
+}
+
+.project-actions {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: auto;
+}
+
+.project-actions a {
     font-size: 0.8rem;
-}
-
-.project-img {
-    width: 90%;
-    height: 90%;
-    border-radius: 2rem;
-}
-
-.project-title {
-    margin: 1rem;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--color-grey-300);
     color: var(--color-black);
+    background: transparent;
+    transition: background 0.2s ease;
 }
 
-.project-btn {
-    color: var(--color-black);
-    border-color: var(--color-grey-300);
+.project-actions a:hover {
+    background: var(--color-grey-300);
 }
+
+.project-image-wrapper img,
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
 
 /* =========================
    CONTACT SECTION
