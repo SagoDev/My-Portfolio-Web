@@ -92,3 +92,26 @@ if (mobileThemeBtn) {
         toggleBtn.click();
     });
 }
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projects = document.querySelectorAll(".project-card");
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const filter = button.dataset.filter;
+
+        projects.forEach(project => {
+            const categories = project.dataset.category;
+            project.style.display =
+                filter === "all" || categories.includes(filter)
+                    ? "flex"
+                    : "none";
+        });
+    });
+});
