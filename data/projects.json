@@ -1,0 +1,306 @@
+[
+  {
+    "id": "fastapi-practice",
+    "title": "Practicas - FastAPI",
+    "description": "Ejercicios practicos sobre FastAPI.",
+    "category": "practice",
+    "image": "./assets/project_practices.png",
+    "alt": "fastapi practice",
+    "tags": [
+      "Python",
+      "FastAPI",
+      "Activo"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://shorturl.at/uCF5v",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
+    "id": "flet-practice",
+    "title": "Practicas - Flet",
+    "description": "Ejercicios practicos sobre Flet.",
+    "category": "practice",
+    "image": "./assets/project_practices.png",
+    "alt": "flet practice",
+    "tags": [
+      "Python",
+      "Flet",
+      "Activo"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://shorturl.at/mzLA3",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
+    "id": "bitacorapp",
+    "title": "Bitacorapp",
+    "description": "Tasks Manager para escritorio.",
+    "category": "web",
+    "image": "./assets/project_bitacorapp.png",
+    "alt": "Bitacorapp Proyect",
+    "tags": [
+      "Python",
+      "Flet",
+      "Activo"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://shorturl.at/u8Ege",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
+    "id": "fragua-sets",
+    "title": "Fragua-Sets",
+    "description": "Complemento de Fragua que proporciona FraguaSets pre-configurados.",
+    "category": "web",
+    "image": "./assets/project_fragua.png",
+    "alt": "Fragua-sets Proyect",
+    "tags": [
+      "Python",
+      "Activo"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://github.com/SagoDev/fragua-sets",
+        "target": "_blank"
+      },
+      {
+        "text": "PyPI",
+        "url": "https://pypi.org/project/fragua-sets/",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
+    "id": "fragua",
+    "title": "Fragua",
+    "description": "Framework modular para construir pipelines ETL y flujos de procesamiento de datos.",
+    "category": "web",
+    "image": "./assets/project_fragua.png",
+    "alt": "Fragua project",
+    "tags": [
+      "Python",
+      "Activo"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://github.com/SagoDev/Fragua",
+        "target": "_blank"
+      },
+      {
+        "text": "PyPI",
+        "url": "https://pypi.org/project/fragua/",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
+    "id": "python-practice",
+    "title": "Practicas - Python",
+    "description": "Ejercicios practicos sobre Python.",
+    "category": "practice",
+    "image": "./assets/project_practices.png",
+    "alt": "python practice",
+    "tags": [
+      "Python",
+      "Finalizado"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://shorturl.at/SVUJo",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
+    "id": "sql-practice",
+    "title": "Practicas - SQL",
+    "description": "Ejercicios practicos sobre SQL.",
+    "category": "practice",
+    "image": "./assets/project_practices.png",
+    "alt": "sql practice",
+    "tags": [
+      "SQL",
+      "Finalizado"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://shorturl.at/C0zAH",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
+    "id": "donors-dashboard",
+    "title": "Donaciones y Pagos",
+    "description": "Dashboard con KPIs de donaciones y pagos para una ONG.",
+    "category": "dashboard",
+    "image": "./assets/dashboard_donors.png",
+    "alt": "Donors dashboard",
+    "tags": [
+      "Looker Studio",
+      "Dashboard"
+    ],
+    "actions": [
+      {
+        "text": "Ver",
+        "url": "https://shorturl.at/yNtBq",
+        "target": "_blank"
+      },
+      {
+        "text": "Datos",
+        "url": "https://shorturl.at/ysfnh",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": true
+  },
+  {
+    "id": "sales-dashboard",
+    "title": "Ventas",
+    "description": "Dashboard financiero con KPIs de ventas y análisis temporal.",
+    "category": "dashboard",
+    "image": "./assets/dashboard_sales.png",
+    "alt": "Sales dashboard",
+    "tags": [
+      "Power BI",
+      "Dashboard"
+    ],
+    "actions": [
+      {
+        "text": "Descargar",
+        "url": "https://shorturl.at/LGT1f",
+        "target": "_blank"
+      },
+      {
+        "text": "Datos",
+        "url": "https://shorturl.at/B2aFx",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": true
+  },
+  {
+    "id": "historical-dashboard",
+    "title": "Histórico de Tickets",
+    "description": "Dashboard con informe de histórico de tickets.",
+    "category": "dashboard",
+    "image": "./assets/dashboard_historical.png",
+    "alt": "Historical dashboard",
+    "tags": [
+      "Power BI",
+      "Dashboard"
+    ],
+    "actions": [
+      {
+        "text": "Descargar",
+        "url": "https://shorturl.at/VWsTJ",
+        "target": "_blank"
+      },
+      {
+        "text": "Datos",
+        "url": "https://shorturl.at/33BXM",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": true
+  },
+  {
+    "id": "utility-dashboard",
+    "title": "Ingresos, Utilidad y Margen",
+    "description": "Dashboard con KPIs de ingresos, utilidad y margen.",
+    "category": "dashboard",
+    "image": "./assets/dashboard_utility_report.png",
+    "alt": "Utility dashboard",
+    "tags": [
+      "Power BI",
+      "Dashboard"
+    ],
+    "actions": [
+      {
+        "text": "Descargar",
+        "url": "https://shorturl.at/hNMYh",
+        "target": "_blank"
+      },
+      {
+        "text": "Datos",
+        "url": "https://shorturl.at/jHlE0",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": true
+  },
+  {
+    "id": "payments-dashboard",
+    "title": "Pagos y Donaciones",
+    "description": "Dashboard con KPIs de pagos y donaciones.",
+    "category": "dashboard",
+    "image": "./assets/dashboard_payments.png",
+    "alt": "Payments dashboard",
+    "tags": [
+      "Power BI",
+      "Dashboard"
+    ],
+    "actions": [
+      {
+        "text": "Descargar",
+        "url": "https://shorturl.at/LgvXi",
+        "target": "_blank"
+      },
+      {
+        "text": "Datos",
+        "url": "https://shorturl.at/3FMN1",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": true
+  },
+  {
+    "id": "e-commerce",
+    "title": "E-Commerce",
+    "description": "Aplicación web de comercio electrónico con flujo completo de usuario.",
+    "category": "web",
+    "image": "./assets/project_e-commerce.webp",
+    "alt": "E-commerce project",
+    "tags": [
+      "JavaScript",
+      "HTML/CSS",
+      "Finalizado"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://github.com/SagoDev/Proyecto-Final-Grupal",
+        "target": "_blank"
+      },
+      {
+        "text": "Ver web",
+        "url": "https://sagodev.github.io/Proyecto-Final-Grupal/login.html",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  }
+]

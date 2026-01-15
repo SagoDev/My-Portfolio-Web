@@ -96,22 +96,107 @@ if (mobileThemeBtn) {
 /* =========================
    PROJECTS SECTION
 ========================= */
-const filterButtons = document.querySelectorAll(".filter-btn");
-const projects = document.querySelectorAll(".project-card");
 
-filterButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        filterButtons.forEach(btn => btn.classList.remove("active"));
-        button.classList.add("active");
+// Cargar proyectos dinámicamente
+async function loadProjects() {
+    const projectsGrid = document.getElementById('projects-grid');
 
-        const filter = button.dataset.filter;
+    try {
+        const response = await fetch('./data/projects.json');
+        if (!response.ok) {
+            throw new Error('No se pudieron cargar los proyectos');
+        }
 
+        const projects = await response.json();
+
+        // Limpiar el contenedor
+        projectsGrid.innerHTML = '';
+
+        // Crear y añadir cada proyecto
         projects.forEach(project => {
-            const categories = project.dataset.category;
-            project.style.display =
-                filter === "all" || categories.includes(filter)
-                    ? "flex"
-                    : "none";
+            const projectCard = createProjectCard(project);
+            projectsGrid.appendChild(projectCard);
+        });
+
+        // Inicializar los filtros después de cargar los proyectos
+        initializeProjectFilters();
+
+    } catch (error) {
+        console.error('Error al cargar los proyectos:', error);
+        projectsGrid.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+                <p style="color: var(--color-grey-700);">No se pudieron cargar los proyectos. Por favor, intenta más tarde.</p>
+            </div>
+        `;
+    }
+}
+
+// Crear una tarjeta de proyecto individual
+function createProjectCard(project) {
+    const article = document.createElement('article');
+    article.className = 'project-card';
+    article.dataset.category = project.category;
+
+    // Crear la imagen (con o sin wrapper)
+    let imageHTML = '';
+    if (project.hasImageWrapper) {
+        imageHTML = `
+            <div class="project-image-wrapper">
+                <img src="${project.image}" alt="${project.alt}">
+            </div>
+        `;
+    } else {
+        imageHTML = `<img src="${project.image}" alt="${project.alt}">`;
+    }
+
+    // Crear los tags
+    const tagsHTML = project.tags.map(tag => `<span>${tag}</span>`).join('');
+
+    // Crear las acciones
+    const actionsHTML = project.actions.map(action =>
+        `<a href="${action.url}" target="${action.target}">${action.text}</a>`
+    ).join('');
+
+    // Ensamblar el HTML completo
+    article.innerHTML = `
+        ${imageHTML}
+        <div class="project-content">
+            <h3>${project.title}</h3>
+            <p class="project-impact">${project.description}</p>
+            <div class="project-tags">
+                ${tagsHTML}
+            </div>
+            <div class="project-actions">
+                ${actionsHTML}
+            </div>
+        </div>
+    `;
+
+    return article;
+}
+
+// Inicializar los filtros de proyectos
+function initializeProjectFilters() {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projects = document.querySelectorAll(".project-card");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            const filter = button.dataset.filter;
+
+            projects.forEach(project => {
+                const category = project.dataset.category;
+                project.style.display =
+                    filter === "all" || category === filter
+                        ? "flex"
+                        : "none";
+            });
         });
     });
-});
+}
+
+// Cargar los proyectos cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', loadProjects);
