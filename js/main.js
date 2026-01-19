@@ -13,13 +13,13 @@ import { initializeProjectsManager } from './components/projects-manager.js';
 function initializeApp() {
     // Initialize mobile navigation
     initializeMobileNav();
-    
+
     // Initialize theme manager
     initializeThemeManager();
-    
+
     // Initialize projects manager
     initializeProjectsManager();
-    
+
     console.log('Portfolio Web - All components initialized');
 }
 

@@ -212,6 +212,11 @@ section {
     margin-bottom: 1rem;
 }
 
+.section__text__p3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 .title {
     font-size: 3rem;
     text-align: center;
