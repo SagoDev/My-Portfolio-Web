@@ -1,5 +1,27 @@
 [
   {
+    "id": "python-analytics-automation",
+    "title": "Analíticas y Automatizaciones",
+    "description": "Conjunto de automatizaciones de procesos relacionados a datos.",
+    "category": "automations",
+    "image": "./assets/project_automations.png",
+    "alt": "analitics automation",
+    "tags": [
+      "Python",
+      "Pandas",
+      "Matplotlib",
+      "Activo"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://shorturl.at/9qKBe",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
     "id": "fastapi-practice",
     "title": "Practicas - FastAPI",
     "description": "Ejercicios practicos sobre FastAPI.",
@@ -66,12 +88,12 @@
     "id": "fragua-sets",
     "title": "Fragua-Sets",
     "description": "Complemento de Fragua que proporciona FraguaSets pre-configurados.",
-    "category": "web",
+    "category": "automations",
     "image": "./assets/project_fragua.png",
     "alt": "Fragua-sets Proyect",
     "tags": [
       "Python",
-      "Activo"
+      "Finalizado"
     ],
     "actions": [
       {
@@ -91,7 +113,7 @@
     "id": "fragua",
     "title": "Fragua",
     "description": "Framework modular para construir pipelines ETL y flujos de procesamiento de datos.",
-    "category": "web",
+    "category": "automations",
     "image": "./assets/project_fragua.png",
     "alt": "Fragua project",
     "tags": [
