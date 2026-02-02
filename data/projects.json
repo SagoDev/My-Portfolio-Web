@@ -1,5 +1,27 @@
 [
   {
+    "id": "diagnose",
+    "title": "Diagnose",
+    "description": "Herramienta de análisis de calidad de datos.",
+    "category": "web",
+    "image": "./assets/project_diagnose.png",
+    "alt": "diagnose project",
+    "tags": [
+      "Python",
+      "JavaScript",
+      "HTML/CSS",
+      "Finalizado"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://shorturl.at/YHSu6",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
     "id": "python-analytics-automation",
     "title": "Analíticas y Automatizaciones",
     "description": "Conjunto de automatizaciones de procesos relacionados a datos.",
@@ -10,7 +32,7 @@
       "Python",
       "Pandas",
       "Matplotlib",
-      "Activo"
+      "Finalizado"
     ],
     "actions": [
       {
@@ -67,7 +89,7 @@
     "id": "bitacorapp",
     "title": "Bitacorapp",
     "description": "Tasks Manager para escritorio.",
-    "category": "web",
+    "category": "desktop",
     "image": "./assets/project_bitacorapp.png",
     "alt": "Bitacorapp Proyect",
     "tags": [
@@ -118,7 +140,7 @@
     "alt": "Fragua project",
     "tags": [
       "Python",
-      "Activo"
+      "Finalizado"
     ],
     "actions": [
       {
