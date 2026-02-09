@@ -1,5 +1,25 @@
 [
   {
+    "id": "columns-semantics",
+    "title": "Columns Semantics",
+    "description": "Herramienta de inferencia semántica de significados de columnas para ingeniería de datos.",
+    "category": "python",
+    "image": "./assets/project_column_semantics.png",
+    "alt": "column semantics project",
+    "tags": [
+      "Python",
+      "Finalizado"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://shorturl.at/TafC9",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
     "id": "diagnose",
     "title": "Diagnose",
     "description": "Herramienta de análisis de calidad de datos.",
@@ -25,7 +45,7 @@
     "id": "python-analytics-automation",
     "title": "Analíticas y Automatizaciones",
     "description": "Conjunto de automatizaciones de procesos relacionados a datos.",
-    "category": "automations",
+    "category": "python",
     "image": "./assets/project_automations.png",
     "alt": "analitics automation",
     "tags": [
@@ -110,7 +130,7 @@
     "id": "fragua-sets",
     "title": "Fragua-Sets",
     "description": "Complemento de Fragua que proporciona FraguaSets pre-configurados.",
-    "category": "automations",
+    "category": "python",
     "image": "./assets/project_fragua.png",
     "alt": "Fragua-sets Proyect",
     "tags": [
@@ -135,7 +155,7 @@
     "id": "fragua",
     "title": "Fragua",
     "description": "Framework modular para construir pipelines ETL y flujos de procesamiento de datos.",
-    "category": "automations",
+    "category": "python",
     "image": "./assets/project_fragua.png",
     "alt": "Fragua project",
     "tags": [
