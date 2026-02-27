@@ -1,5 +1,27 @@
 [
   {
+    "id": "health-expenditure-vs-life-expectancy",
+    "title": "Health Expenditure vs Life Expectancy",
+    "description": "Análisis de la relación entre el gasto en salud y la esperanza de vida utilizando Python.",
+    "category": "analysis",
+    "image": "./assets/analysis_health_expenditure_vs_life_expectancy.png",
+    "alt": "health expenditure vs life expectancy project",
+    "tags": [
+      "Python",
+      "Pandas",
+      "Matplotlib",
+      "Finalizado"
+    ],
+    "actions": [
+      {
+        "text": "GitHub",
+        "url": "https://shorturl.at/RfXBo",
+        "target": "_blank"
+      }
+    ],
+    "hasImageWrapper": false
+  },
+  {
     "id": "columns-semantics",
     "title": "Columns Semantics",
     "description": "Herramienta de inferencia semántica de significados de columnas para ingeniería de datos.",
