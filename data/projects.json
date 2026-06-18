@@ -86,69 +86,6 @@
     "hasImageWrapper": false
   },
   {
-    "id": "fastapi-practice",
-    "title": "Practicas - FastAPI",
-    "description": "Ejercicios practicos sobre FastAPI.",
-    "category": "practice",
-    "image": "./assets/project_practices.png",
-    "alt": "fastapi practice",
-    "tags": [
-      "Python",
-      "FastAPI",
-      "Activo"
-    ],
-    "actions": [
-      {
-        "text": "GitHub",
-        "url": "https://shorturl.at/uCF5v",
-        "target": "_blank"
-      }
-    ],
-    "hasImageWrapper": false
-  },
-  {
-    "id": "flet-practice",
-    "title": "Practicas - Flet",
-    "description": "Ejercicios practicos sobre Flet.",
-    "category": "practice",
-    "image": "./assets/project_practices.png",
-    "alt": "flet practice",
-    "tags": [
-      "Python",
-      "Flet",
-      "Activo"
-    ],
-    "actions": [
-      {
-        "text": "GitHub",
-        "url": "https://shorturl.at/mzLA3",
-        "target": "_blank"
-      }
-    ],
-    "hasImageWrapper": false
-  },
-  {
-    "id": "bitacorapp",
-    "title": "Bitacorapp",
-    "description": "Tasks Manager para escritorio.",
-    "category": "desktop",
-    "image": "./assets/project_bitacorapp.png",
-    "alt": "Bitacorapp Proyect",
-    "tags": [
-      "Python",
-      "Flet",
-      "Activo"
-    ],
-    "actions": [
-      {
-        "text": "GitHub",
-        "url": "https://shorturl.at/u8Ege",
-        "target": "_blank"
-      }
-    ],
-    "hasImageWrapper": false
-  },
-  {
     "id": "fragua-sets",
     "title": "Fragua-Sets",
     "description": "Complemento de Fragua que proporciona FraguaSets pre-configurados.",
